@@ -1,0 +1,30 @@
+<Inputwidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: "10dp"
+        lbl:label1
+        txt: textin1
+        BoxLayout:
+            size_hint_y: 100
+            Label:
+                id:label1
+                text: "Form Login"
+                size_hint_x: 1
+        BoxLayout:
+            size_hint_y: 100
+            Label:
+                text: "Username"
+            TextInput:
+                id: textin1
+                hint_text: "Input Username"
+                #textinput = TextInput()
+                
+
+        BoxLayout:
+            size_hint_y: 600
+            Button:
+                size_hint_x: 2
+                on_press:
+                    
+                    #ab = textin1.text
+                    root.btn_clk(textin1.text)
