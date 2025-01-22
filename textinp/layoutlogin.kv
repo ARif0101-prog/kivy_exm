@@ -1,0 +1,22 @@
+# Base widget from Rootwidget class in .py file
+<RootWidget>:
+
+# used to change the label text
+# as in rootwidget class
+
+
+# child that is an instance of the BoxLayout
+		
+	TextInput:
+		# id is limited in scope to the rule
+		# it is declared in. An id is a weakref
+		# to the widget and not the widget itself.
+		size: 150,50
+		pos : 20,50
+		id: my_label
+		hint_text: 'silahkan masukkan nama'
+		#color: [0, 84, 80, 19]
+		multiline: False
+		#bind: on_text_validate=on_enter
+		on_text_validate:  
+			root.val_in(my_label.text)

@@ -1,0 +1,24 @@
+<MyrootWidget>:
+    BoxLayout:
+
+        orientation: 'vertical'
+        padding: "10dp"
+        BoxLayout:
+            size_hint_y: 200
+            Label:
+                id: lbl1
+                text:"Masukkan text :"
+                size_hint_x: 1
+            TextInput:
+                id: txtin
+                size_hint_x: 3
+            Button:
+                text: "validate"
+                size_hint_x: 1
+                on_press:
+                    root.val_in()
+        BoxLayout
+            size_hint_y:200
+            Label:
+                id: lbl2
+
